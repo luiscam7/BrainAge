@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "brain-age"
+version = "0.1.0"
+description = "MLFlow project to determine brain age based on connectivity measures. Brain age is modeled from a healthy normally distributed population."
+authors = ["luiscam7 <lcamargo2007@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "brain_age"}]
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+numpy = "^1.26.4"
+mne = "^1.6.1"
+scikit-learn = "^1.4.0"
+[tool.poetry.group.dev.dependencies]
+mlflow = "^2.10.2"
+scipy = "^1.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
